@@ -1,6 +1,6 @@
 {
   "name": "rkit-npm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A modern React component library with a beautiful design system",
   "type": "module",
   "main": "./dist/index.js",
@@ -22,7 +22,7 @@
       "require": "./dist/components.js",
       "types": "./dist/types/components/design-system/index.d.ts"
     },
-    "./icons": {  
+    "./icons": {
       "import": "./dist/icons.esm.js",
       "require": "./dist/icons.js",
       "types": "./dist/types/assets/icons/index.d.ts"
