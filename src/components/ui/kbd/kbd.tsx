@@ -1,6 +1,6 @@
 import { cn } from "../../../lib/utils";
 
-function Kbd({ className, ...props }: React.ComponentProps<"kbd">) {
+function KbdPrimitive({ className, ...props }: React.ComponentProps<"kbd">) {
   return (
     <kbd
       data-slot="kbd"
@@ -15,7 +15,10 @@ function Kbd({ className, ...props }: React.ComponentProps<"kbd">) {
   );
 }
 
-function KbdGroup({ className, ...props }: React.ComponentProps<"div">) {
+function KbdGroupPrimitive({
+  className,
+  ...props
+}: React.ComponentProps<"div">) {
   return (
     <kbd
       data-slot="kbd-group"
@@ -25,4 +28,4 @@ function KbdGroup({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-export { Kbd, KbdGroup };
+export { KbdPrimitive, KbdGroupPrimitive };

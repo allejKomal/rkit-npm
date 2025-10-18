@@ -6,7 +6,7 @@ import {
   AvatarPrimitive,
   AvatarImagePrimitive,
 } from "../../ui/avatar";
-import { Badge } from "../../ui/badge";
+import { BadgePrimitive } from "../../ui/badge";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
 
 // Size configurations - predefined for Tailwind JIT compilation
@@ -408,7 +408,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
 
         {/* Badge overlay */}
         {showBadge && badgeContent !== undefined && (
-          <Badge
+          <BadgePrimitive
             className={cn(
               "absolute h-5 min-w-5 rounded-full px-1 tabular-nums flex items-center justify-center",
               badgePositionClasses[badgePosition],
@@ -417,7 +417,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
             variant={badgeVariant}
           >
             {badgeContent}
-          </Badge>
+          </BadgePrimitive>
         )}
       </div>
     ) : (
