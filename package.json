@@ -1,6 +1,6 @@
 {
   "name": "rkit-npm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A modern React component library with a beautiful design system",
   "type": "module",
   "main": "./dist/index.js",
