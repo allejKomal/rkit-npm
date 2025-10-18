@@ -1,7 +1,11 @@
 import React from "react";
 
 import { cn } from "../../../lib/utils";
-import { AvatarFallback, Avatar as RkitAvatar, AvatarImage } from "../../ui/avatar";
+import {
+  AvatarFallbackPrimitive,
+  AvatarPrimitive,
+  AvatarImagePrimitive,
+} from "../../ui/avatar";
 import { Badge } from "../../ui/badge";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../../ui/tooltip";
 
@@ -353,14 +357,16 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
 
     // Render the base avatar component
     const avatarElement = (
-      <RkitAvatar className={avatarClassName}>
-        {src && <AvatarImage src={src} alt={alt} className={imgClassName} />}
-        {(fallback || icon) && (
-          <AvatarFallback className={fallbackClassName}>
-            {icon || fallback}
-          </AvatarFallback>
+      <AvatarPrimitive className={avatarClassName}>
+        {src && (
+          <AvatarImagePrimitive src={src} alt={alt} className={imgClassName} />
         )}
-      </RkitAvatar>
+        {(fallback || icon) && (
+          <AvatarFallbackPrimitive className={fallbackClassName}>
+            {icon || fallback}
+          </AvatarFallbackPrimitive>
+        )}
+      </AvatarPrimitive>
     );
 
     // Build the complete avatar with all features
