@@ -10,6 +10,7 @@ export default {
   input: {
     index: "src/index.ts",
     primitives: "src/components/ui/index.ts",
+    components: "src/components/design-system/index.ts",
     icons: "src/assets/icons/index.ts",
     styles: "src/index.css",
   },

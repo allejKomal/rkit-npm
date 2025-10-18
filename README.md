@@ -70,6 +70,40 @@ function Header() {
 }
 ```
 
+## Import Paths
+
+The library provides multiple import paths for better organization:
+
+### 1. Main Entry (Default)
+All components, hooks, and utilities:
+```tsx
+import { Button, useTheme, cn } from "rkit-npm";
+```
+
+### 2. Primitives
+All UI primitive components (Radix-based):
+```tsx
+import { Button, Card, Input, Dialog, Accordion } from "rkit-npm/primitives";
+```
+
+### 3. Components
+Design system components:
+```tsx
+import { Avatar } from "rkit-npm/components";
+```
+
+### 4. Icons
+All icon components:
+```tsx
+import { MenuIcon } from "rkit-npm/icons";
+```
+
+### 5. Styles
+CSS stylesheets:
+```tsx
+import "rkit-npm/styles";
+```
+
 ## Components
 
 ### Layout Components
